@@ -1,0 +1,12 @@
+<form (submit)="registrarPersonaje()">
+  <div class="mb-3">
+    <label class="form-label">Nombre</label>
+    <input type="text" [(ngModel)]="personajeForm.name" [ngModelOptions]="{standalone: true}" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Poder</label>
+    <input type="number" [(ngModel)]="personajeForm.power" [ngModelOptions]="{standalone: true}" class="form-control" min="0">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
