@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ContadorComponent } from './bases/contador/contador.component';
 import { HeroesComponent } from './bases/heroes/heroes.component';
 import { PersonajesModule } from './personajes/personajes.module';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContadorComponent,
-    HeroesComponent
+    HeroesComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
